@@ -1,12 +1,76 @@
-.button{
+.row.blank {
+  height: 15px;
+}
+
+.button {
   background-color:blue;
   height:40px;
   width:80px;
-  border:1px solid black;
+  display: inline-block;
+  margin: 0 10px;
+  opacity: 1;
 
   &.round{
+    background-color: unset;
+    height:37.5px;
+    width:37.5px;
     border-radius:50%;
-    width:40px;
+    border:4px solid #f2cd49;
+    &.disabled{
+      border:4px solid #c1a43b;
+      p {
+        color: darkgoldenrod;
+      }
+    }
+    &.solid {
+      background-color: #f2cd49;
+      p {
+        color: #1a4773;
+      }
+    }
+    p {
+      vertical-align: middle;
+      margin: auto;
+      text-align: center;
+      color: #f2cd49;
+      font-size: 31px;
+    }
   }
-
+  &.longRound {
+    &.solid{
+      background-color: #f2cd49;
+      border-radius: 25px / 25px;
+      left: -20px;
+      width: 200px;
+      color: #1a4773;      
+      &.clicktap {
+        background-color: #c1a43b;
+        border: none;
+      }
+    }
+    &.transparent{
+      color: #f2cd49;
+      border: 3px solid #f2cd49;
+      background-color: #1a4773;
+      border-radius: 25px / 25px;
+      left: -20px;
+      width: 200px;
+      &.clicktap {
+        color: #1a4773; 
+        background-color: #c1a43b;
+        border: none;
+      }
+    }
+    p {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 12px;
+      padding: 5px;
+      text-align: center;
+      margin: auto;
+    }
+  
+    &.longRound:hover {
+      opacity: 0.75;
+    }
+  }
 }

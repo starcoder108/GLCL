@@ -36,3 +36,8 @@ gulp.task('sass', function(){
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest(cssDest))
 });
+
+gulp.task('watch', function() {
+    gulp.watch('assets/**/*.js', ['scripts']);
+    gulp.watch('assets/**/*.scss', ['sass']);
+});
