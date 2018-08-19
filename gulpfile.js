@@ -5,7 +5,7 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var concatCss = require('gulp-concat-css');
 let cleanCSS = require('gulp-clean-css');
-const babel = require('gulp-babel');
+let babel = require('gulp-babel');
 
 gulp.task('default',['scripts','sass']);
 

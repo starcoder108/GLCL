@@ -1,5 +1,5 @@
 
-var fn = function() {
+let fn = () => {
     var minus = document.getElementsByClassName("minus");
     console.log("htmlcollection: ", minus);
     

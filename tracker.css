@@ -1,0 +1,54 @@
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+.small-wrapper {
+    background-color: #4b4f53;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 400px;
+}
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-arrow-left, .fa-times {
+    color: #babbbc;
+    flex: 1;
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
+.fa-arrow-left {
+    padding: 0 15px;
+} 
+
+.fa-times {
+    text-align: right;
+    padding: 0 15px;
+}
+
+.container {
+    flex: 3;
+}
+
+.container-sm {
+    flex: 1;
+    margin: auto;
+}
+
+p {
+    padding: 0 30px;
+}
+
+.save {
+    padding: 50px 0;
+}
